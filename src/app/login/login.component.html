@@ -1,9 +1,9 @@
 <div class="myform">
-<form (ngSubmit)='check(username, password)' [formGroup]='loginForm'>
+<form (ngSubmit)='check(p1.value,p2.value)' [formGroup]='loginForm'>
     <p>Username</p>
-    <p><input type="text"formControlName="username" placeholder="Enter Username"></p>
+    <p><input type="text" formControlName="username" placeholder="Enter Username" #p1></p>
     <p>Password</p>
-    <p><input type="password" formControlName="password" placeholder="Enter Password"></p>
+    <p><input type="password" formControlName="password" placeholder="Enter Password" #p2></p>
     <p><button>LOGIN</button></p>
 </form>
 <span>{{ msg }}</span>
