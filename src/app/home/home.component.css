@@ -1,0 +1,20 @@
+.wrapper {
+    overflow: hidden;
+  }
+  
+  .sliding-background {
+    background: url(https://unsplash.com/assets/api/api-photo-grid@2x-3b92db4cdfc938c6dde2291ca1c78ab7ace98ef916a8dd08c00a6b006c0b631b.jpg)
+    repeat-x;
+    height: 400px;
+    width: 5000px;
+    animation: slide 5s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1692px, 0, 0);
+    }
+  }

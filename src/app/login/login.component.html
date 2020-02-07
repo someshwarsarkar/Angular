@@ -1,0 +1,8 @@
+<form (ngSubmit)='check()' [formGroup]='loginForm' class="myform">
+    <p>Username</p>
+    <p><input type="text"formControlName="username" placeholder="Enter Username"></p>
+    <p>Password</p>
+    <p><input type="password" formControlName="password" placeholder="Enter Password"></p>
+    <p><button>LOGIN</button></p>
+</form>
+<span>{{ msg }}</span>
