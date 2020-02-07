@@ -1,11 +1,4 @@
-
-
-<mat-paginator [length]="length"
-              [pageSize]="pageSize"
-              (page)="pageEvent = $event">
-</mat-paginator>
-
-<div *ngIf="pageEvent">
-    <p><a routerLink="{{pageEvent.id}}">{{pageEvent.title}}</a></p>
+<div *ngFor="let i of albumsobj">
+    <a routerLink="{{i.id}}">{{i.title}}</a>
 </div>
 <router-outlet> </router-outlet>
