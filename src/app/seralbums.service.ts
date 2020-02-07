@@ -19,7 +19,7 @@ export class SeralbumsService {
   }
   checklogin(uname: string, pwd: string) {
     if (uname == "admin" && pwd == "admin123") {
-      localStorage.setItem('username', "admin");
+      window.localStorage.setItem('username', "admin");
       return true;
     }
     else {
@@ -27,9 +27,9 @@ export class SeralbumsService {
     }
   }
   getUsername(){
-    localStorage.getItem('username');
+    window.localStorage.getItem('username');
   }
   destroyToken(){
-    localStorage.removeItem('username');
+    window.localStorage.removeItem('username');
   }
 }
