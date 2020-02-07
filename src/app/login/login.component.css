@@ -1,0 +1,9 @@
+.myform{
+    width: 400px;
+    height: 400px;
+    background-color: lightgrey;
+    margin: auto;
+}
+.myform form{
+    align-self: center;
+}

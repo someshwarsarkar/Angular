@@ -42,7 +42,7 @@ import { SliderModule } from 'angular-image-slider';
     PhotosComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,

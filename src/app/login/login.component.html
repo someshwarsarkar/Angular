@@ -1,4 +1,5 @@
-<form (ngSubmit)='check()' [formGroup]='loginForm' class="myform">
+<div class="myform">
+<form (ngSubmit)='check()' [formGroup]='loginForm'>
     <p>Username</p>
     <p><input type="text"formControlName="username" placeholder="Enter Username"></p>
     <p>Password</p>
@@ -6,3 +7,4 @@
     <p><button>LOGIN</button></p>
 </form>
 <span>{{ msg }}</span>
+</div>
