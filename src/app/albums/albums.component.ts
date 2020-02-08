@@ -19,14 +19,4 @@ export class AlbumsComponent implements OnInit {
       }
     )
   }
-
-
-    // MatPaginator Inputs
-    length = 100;
-    pageSize = 10;
-  
-    // MatPaginator Output
-    pageEvent: PageEvent;
-  
-
 }
