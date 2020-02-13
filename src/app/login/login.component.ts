@@ -9,8 +9,7 @@ import { SeralbumsService } from '../seralbums.service';
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
-  msg:string;
-  constructor(private routes:Router, private js:SeralbumsService) { }
+  constructor() { }
 
   ngOnInit() {
   }
