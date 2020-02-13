@@ -1,18 +1,32 @@
 
 <div class="myform">
   
-<form (ngSubmit)='check(p1.value,p2.value)' [formGroup]='loginForm' align="center">
-  <i><h2>Sign In Here</h2></i><p><a href="">Sign Up   </a><a href="">   |    Forgot Passsword</a></p>
-    <mat-form-field >
-      <mat-label>Username</mat-label>
-      <input matInput type="username" formControlName="username" > 
-    </mat-form-field><br>
-    <mat-form-field >
-        <mat-label>Password</mat-label>
-        <input matInput type="password" formControlName="password" > 
-      </mat-form-field><br>
-      <button mat-raised-button color="primary" type="submit">LOGIN</button>
-</form>
-<span>{{ msg }}</span>
 
+<mat-tab-group>
+  <mat-tab label="Sign In">
+    <form class="frm"  [formGroup]='loginForm' align="center">
+      <i><h2 style="color:lavenderblush;">Sign In Here</h2></i>
+          <p>Email<br><input class="myinput" type="email" formControlName="username"></p>
+          <p>Password<br><input class="myinput" type="password"></p>
+          <button mat-raised-button color="primary" type="submit">LOGIN</button>
+    </form>
+    <span>{{ msg }}</span>
+  </mat-tab>
+  <mat-tab label="Sign Up">
+    <form  [formGroup]='loginForm' class="frm2" align="center">
+      <i><h2 style="color:lavenderblush;">Sign Up Here</h2></i>
+      <p>Email<br><input class="myinput" type="email" formControlName="email"></p>
+      <p>Password<br><input class="myinput" type="password" formControlName="cpassword"></p>
+      <p>Confirm Password<br><input class="myinput" type="password" formControlName="cpassword"></p>
+      <button mat-raised-button color="primary" type="submit">REGISTER</button>
+</form>
+  </mat-tab>
+  <mat-tab label="Forgot Password">
+    <form [formGroup]='loginForm' class="frm3" align="center">
+      <p>Email<br><input class="myinput" type="email"></p>
+      <button mat-raised-button color="primary" type="submit">SUBMIT</button>
+  </form>
+    
+  </mat-tab>
+</mat-tab-group>
 </div>

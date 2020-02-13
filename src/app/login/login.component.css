@@ -1,14 +1,28 @@
 
 .myform{
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     background-color: rgb(79, 69, 212);
     margin: auto;
     border-radius: 50px;
     box-shadow: 10px 20px rgb(124, 139, 187);
+    margin-top: 20px;
 }
-.myform form{
+.myform mat-tab-group mat-tab .frm{
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    overflow: visible;
+    margin: auto;
+}
+.frm2, .frm3{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.myinput{
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 2px solid rgb(61, 25, 25);
 }
