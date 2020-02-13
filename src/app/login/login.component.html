@@ -7,7 +7,7 @@
     <form class="frm"  [formGroup]='loginForm' align="center">
       <i><h2 style="color:lavenderblush;">Sign In Here</h2></i>
           <p>Email<br><input class="myinput" type="email" formControlName="username"></p>
-          <p>Password<br><input class="myinput" type="password"></p>
+          <p>Password<br><input class="myinput" type="password" formControlName="password"></p>
           <button mat-raised-button color="primary" type="submit">LOGIN</button>
     </form>
     <span>{{ msg }}</span>
