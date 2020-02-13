@@ -26,10 +26,12 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatPaginatorModule} from '@angular/material/paginator';
-
+import {MatTabsModule} from '@angular/material/tabs';
 import { PhotosComponent } from './photos/photos.component';
 import { AuthGuard } from './guards/auth-guard.service';
 import { SliderModule } from 'angular-image-slider';
+import { RegisterComponent } from './register/register.component';
+import {MatDividerModule} from '@angular/material/divider';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +42,7 @@ import { SliderModule } from 'angular-image-slider';
     UserdetailsComponent,
     HomeComponent,
     PhotosComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -61,7 +64,9 @@ import { SliderModule } from 'angular-image-slider';
     ReactiveFormsModule,
     HttpClientModule,
     MatPaginatorModule,
-    SliderModule
+    SliderModule,
+    MatTabsModule,
+    MatDividerModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

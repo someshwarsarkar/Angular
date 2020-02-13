@@ -1,10 +1,18 @@
+
 <div class="myform">
-<form (ngSubmit)='check(p1.value,p2.value)' [formGroup]='loginForm'>
-    <p>Username</p>
-    <p><input type="text" formControlName="username" placeholder="Enter Username" #p1></p>
-    <p>Password</p>
-    <p><input type="password" formControlName="password" placeholder="Enter Password" #p2></p>
-    <p><button>LOGIN</button></p>
+  
+<form (ngSubmit)='check(p1.value,p2.value)' [formGroup]='loginForm' align="center">
+  <i><h2>Sign In Here</h2></i><p><a href="">Sign Up   </a><a href="">   |    Forgot Passsword</a></p>
+    <mat-form-field >
+      <mat-label>Username</mat-label>
+      <input matInput type="username" formControlName="username" > 
+    </mat-form-field><br>
+    <mat-form-field >
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" > 
+      </mat-form-field><br>
+      <button mat-raised-button color="primary" type="submit">LOGIN</button>
 </form>
 <span>{{ msg }}</span>
+
 </div>

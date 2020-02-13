@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 
 import { PhotosComponent } from './photos/photos.component';
 import { AuthGuard } from './guards/auth-guard.service';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -22,7 +23,8 @@ const routes: Routes = [
   ]},
   {path:'userdetails', canActivate : [AuthGuard] , component:UserdetailsComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: '**', component: HomeComponent}
+  {path: '**', component: HomeComponent},
+  {path:'register', component:RegisterComponent}
 ];
 
 @NgModule({

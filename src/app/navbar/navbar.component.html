@@ -2,14 +2,14 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'side' : 'side'"
-      [opened]="(isHandset$ | async) === false">
+      [opened]="(isHandset$ | async) === true">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="/home" routerLinkActive="ractive">Home</a>
       <a mat-list-item routerLink="/about" routerLinkActive="ractive">About</a>
       <a mat-list-item routerLink="/login" routerLinkActive="ractive">Login</a>
-      <a mat-list-item routerLink="/albums">Albums</a>
-      <a mat-list-item routerLink="/userdetails">User Details</a>
+      <a mat-list-item routerLink="/albums/1" routerLinkActive="ractive">Albums</a>
+      <a mat-list-item routerLink="/userdetails" routerLinkActive="ractive">User Details</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -30,4 +30,14 @@
 </div>
     
   </mat-sidenav-content>
+  
 </mat-sidenav-container>
+<div class="footer">
+  <h2 style="color: red;">Contact Us Anytime</h2>
+  <p>Developer info:</p>
+  <p>someshwarsarkar9851@gmail.com, dasa6701@gmail.com, ssumansaha6@gmail.com</p>
+  <p>Instagram:</p>
+  <p>@Gallery002</p>
+  <p style="color: rgb(201, 162, 35);">For selling product visit our offline store</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0897338353125!2d88.42488431427377!3d22.575746938546057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275927b0061ad%3A0x496c2fab98874c86!2sWebskitters%20Technology%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1581577046113!5m2!1sen!2sin" width="500" height="150" frameborder="0" style="border:0; border-radius: 100px;" allowfullscreen=""></iframe>
+</div>

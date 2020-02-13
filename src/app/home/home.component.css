@@ -18,3 +18,20 @@
       transform: translate3d(-1692px, 0, 0);
     }
   }
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px lightblue, 0 0 40px lightseagreen, 0 0 50px lightcyan, 0 0 60px lightskyblue, 0 0 70px lightskyblue, 0 0 80px lightseagreen;
+    }
+  }

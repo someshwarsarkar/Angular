@@ -1,4 +1,12 @@
-<div *ngFor="let i of albumsobj">
-    <a routerLink="{{i.id}}">{{i.title}}</a>
-</div>
-<router-outlet> </router-outlet>
+
+<nav mat-tab-nav-bar style="background-color: black;">
+    <a mat-tab-link
+       *ngFor="let i of albumsobj"
+       routerLink="{{i.id}}"
+       routerLinkActive #rla="routerLinkActive"
+       [active]="rla.isActive"style="color: white;">
+      {{i.title}}
+    </a>
+  </nav>
+  
+  <router-outlet></router-outlet>
